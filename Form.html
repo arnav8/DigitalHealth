@@ -1,0 +1,89 @@
+<html>
+    <head>
+         <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="as.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="alert/dist/sweetalert-dev.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+<script>
+     function myFunction() {
+   let  x = document.getElementById("numb").value;
+let y = document.getElementById("numb1").value;
+  let z = document.getElementById("numb2").value;
+  let a = document.getElementById("numb3").value;
+  let b = document.getElementById("numb4").value;
+  let c = document.getElementById("numb5").value;
+
+
+ if ((isNaN(x) || x < 1 || x > 5) || (isNaN(y) || y < 1 || y > 5)|| (isNaN(z) || z < 1 || z > 5)|| (isNaN(a) || a < 1 || a > 5)|| (isNaN(b) || b< 1 || b > 5) || (isNaN(c) || c < 1 || c> 5)){
+     alert("One or more input is invalid or blank. Please check your input");
+
+      } else{
+        var q = parseInt(x);
+        var w = parseInt(y);
+        var e = parseInt(y);
+        var r = parseInt(y);
+        var t = parseInt(y);
+        var u = parseInt(y);
+        var avg = (q+w+e+r+t+u)/6;
+     alert("Thank you for your response ");
+     if (avg<=2){
+            let text = "Your daily Wellness score is " + avg + ". You could do better tomorrow." ;
+        document.getElementById("demo").innerHTML = text;
+     }
+     else if(avg > 2){
+        let text = "Your daily Wellness score is " + avg + ". Hope you have a great day tomorrow as well.";
+        document.getElementById("demo").innerHTML = text;
+     }
+
+}
+}
+        </script>
+  
+        <style>
+            div {
+                box-sizing: border-box;
+                width: 100%;
+                border: 100px solid black;
+                float: left;
+                align-content: center;
+                align-items: center;
+            }
+  
+            form {
+                margin: 0 auto;
+                width: 600px;
+            }
+        </style>
+    </head>
+  
+    <body>
+        <br>
+        <form name="RegForm">
+                  <h1 style="text-align: center;">Daily Wellness Check </h1>
+        <br>
+        <p>Please input a number between 1 and 5:</p>
+        <br>
+        <p> 1: strongly disagree  &nbsp &nbsp5: strongly agree </p>
+        <br>
+        <p>You are happy today <input id="numb"> </p> <br>
+        <p>You have smiled frequently today <input id="numb1"> </p><br>
+        <p>You had a restful sleep today <input id="numb2"> </p><br>
+        <p>You drank plenty of water today<input id="numb3"> </p><br>
+        <p>You had atleast one serving of fruit and vegetables today <input id="numb4"> </p><br>
+        <p>You were able to talk to others today<input id="numb5"> </p><br>
+
+
+
+            <p align="center">
+                <button type="button" onclick="myFunction()">Submit</button>
+                <input type="reset" value="Reset" name="Reset">
+                <br>
+                <br>
+                <h3><p id="demo"></p></h3>
+            </p>
+        </form>
+    </body>
+</html>
+  

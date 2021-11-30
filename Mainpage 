@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="as.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <section></section>
+      <ul>
+        <li>Select a game </li>
+        <li><a href="https://tik-tac-do.herokuapp.com/">TicTacToe</a></li>
+        <li><a href="Comingsoon.html">4-in-a-Row</a></li>
+        <li><a href="Comingsoon.html"> Bingo</a></li>
+        <li><a href="Comingsoon.html">Uno</a></li>
+        <li><a href="Comingsoon.html">Poker</a></li>
+      </ul>
+    </nav>
+    
+  </body>
+</html>
